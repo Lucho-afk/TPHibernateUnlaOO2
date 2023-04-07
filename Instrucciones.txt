@@ -1,6 +1,7 @@
-1- ejectuar los scripts en una bd
-2- importar las librerias de hibernate
-3- correr el codigo
+1- ejectuar los scripts en una bd.
+2- importar las librerias de hibernate.
+3- poner la user y pass de la bd propia.
+4- correr el codigo.
 
 IMPORTANTE: correr con una version de java 8 diferente a la que viene con eclipse por defecto.
 
