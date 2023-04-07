@@ -1,0 +1,7 @@
+1- ejectuar los scripts en una bd
+2- importar las librerias de hibernate
+3- correr el codigo
+
+IMPORTANTE: correr con una version de java 8 diferente a la que viene con eclipse por defecto.
+
+NOTA: los metodos de amortizacion estan mal hechos probablemente, no se lo que es una amortizacion xD. 
