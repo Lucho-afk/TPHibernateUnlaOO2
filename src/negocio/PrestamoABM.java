@@ -14,7 +14,7 @@ public class PrestamoABM {
 	public Prestamo traerPrestamo(long idPrestamo) throws Exception {
 //Implementar: si el no existe el prestamo lanzar la excepción
 
-		Prestamo p = dao.traer(idPrestamo);
+		Prestamo p = dao.traerPrestamoYcuotas(idPrestamo);
 		if (p == null) {
 			throw new Exception("No existe prestamo");
 		}

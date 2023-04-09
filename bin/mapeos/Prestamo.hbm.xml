@@ -14,7 +14,7 @@
 			column="idCliente" not-null="true" />
 		<set name="cuotas"  table="cuota" order-by="idCuota asc"
 			inverse="true"
-			lazy="false" fetch="select">
+			lazy="true" fetch="select">
 			<key column="idPrestamo" not-null="true" />
 			<one-to-many class="datos.Cuota" />
 		</set>
