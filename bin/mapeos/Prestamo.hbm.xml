@@ -12,7 +12,7 @@
 		<property column="cantCuotas" name="cantCuotas" type="int" />
 		<many-to-one name="cliente" class="datos.Cliente"
 			column="idCliente" not-null="true" />
-		<set name="cuotas"  table="cuota" order-by="idCuota asc"
+		<set name="cuotas" cascade="save-update"  table="cuota" order-by="idCuota asc"
 			inverse="true"
 			lazy="true" fetch="select">
 			<key column="idPrestamo" not-null="true" />

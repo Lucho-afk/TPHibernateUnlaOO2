@@ -1,5 +1,7 @@
 package test;
 
+import java.time.LocalDate;
+
 import datos.Prestamo;
 import negocio.ClienteABM;
 import negocio.CuotaABM;
@@ -17,10 +19,10 @@ public class TestCuotas {
 //		Prestamo pres = prestamoAbm.traerPrestamoYcuotas(1l);
 //		System.out.println(pres);
 
-//		Prestamo nuevoPrestamo = new Prestamo(LocalDate.now(), 100000, 1.15, 3, clienteABM.traer(1l));
-//		int idNuevoPrestamo = prestamoAbm.altaPrestamoConCuotas(nuevoPrestamo);
+		Prestamo nuevoPrestamo = new Prestamo(LocalDate.now(), 100000, 1.15, 5, clienteABM.traer(1l));
+		int idNuevoPrestamo = prestamoAbm.altaPrestamoConCuotas(nuevoPrestamo);
 //		cuotaAbm.pagarCuota(4l, 1, LocalDate.now(), 2);
-		System.out.println(prestamoAbm.traerPrestamo(4));
+		System.out.println(prestamoAbm.traerPrestamo(idNuevoPrestamo));
 
 	}
 
